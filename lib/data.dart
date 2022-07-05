@@ -6,34 +6,34 @@ class Data {
       ProductModel(
           1,
           "assets/shoes_1.png",
-          "Creter Impact",
-          "Men's Shoes",
+          "Nike",
+          "Homme",
           "men shoes",
-          99.56
+          15000
       ),
       ProductModel(
           2,
           "assets/shoes_2.png",
           "Air - Max Pre Day",
-          "Men's Shoes",
+          "Homme",
           "men shoes",
-          137.56
+          20000
       ),
       ProductModel(
           3,
           "assets/shoes_3.png",
           "Air Max 51",
-          "Men's Shoes",
+          "Homme",
           "men shoes",
-          99.56
+          25000
       ),
       ProductModel(
           4,
           "assets/shoes_4.png",
-          "EM Shoes",
-          "Men's Shoes",
+          "Jordan",
+          "Fille",
           "men shoes",
-          212.56
+          9000
       ),
     ];
   }
@@ -46,7 +46,7 @@ class Data {
           "Lifestyle",
           "Men's Shoes",
           "men shoes",
-          99.56
+         15000
       ),
       ProductModel(
           2,
@@ -54,7 +54,7 @@ class Data {
           "Basketball",
           "Men's Shoes",
           "men shoes",
-          137.56
+          20000
       ),
       ProductModel(
           3,
@@ -62,7 +62,7 @@ class Data {
           "Running",
           "Men's Shoes",
           "men shoes",
-          99.56
+          250000
       ),
       ProductModel(
           4,
@@ -70,7 +70,7 @@ class Data {
           "Rugby",
           "Men's Shoes",
           "men shoes",
-          212.56
+          9000
       ),
     ];
   }

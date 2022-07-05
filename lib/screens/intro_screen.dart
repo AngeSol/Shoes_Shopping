@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
 import '../colors.dart';
-import 'dashboard_screen.dart';
+import 'home_screen.dart';
+
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -96,10 +97,10 @@ class _IntroScreenState extends State<IntroScreen> with SingleTickerProviderStat
                     RichText(
                       textAlign: TextAlign.center,
                       text: const TextSpan(
-                          text: "LIVE YOUR\nPERFECT",
+                          text: "VIVEZ UNE BELLE\nEXPERIENCE",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 37.0,
+                              fontSize: 30.0,
                               fontWeight: FontWeight.bold)),
                     ),
                     const SizedBox(height: 20,),
@@ -114,14 +115,11 @@ class _IntroScreenState extends State<IntroScreen> with SingleTickerProviderStat
                     const Spacer(),
                     GestureDetector(
                       behavior: HitTestBehavior.translucent,
-                      // onTap: (){
-                      //   print("assa");
-                      //   Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, child: DashboardScreen()));
-                      // },
+
                       onVerticalDragUpdate: (details) {
                         int sensitivity = 8;
                         if(details.delta.dy < -sensitivity){
-                          Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, child: DashboardScreen()));
+                          Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, child:HomeScreen()));
                         }
                       },
                       child: AbsorbPointer(
@@ -142,7 +140,7 @@ class _IntroScreenState extends State<IntroScreen> with SingleTickerProviderStat
                               RichText(
                                 textAlign: TextAlign.center,
                                 text: const TextSpan(
-                                    text: "Get Started",
+                                    text: "Commençons",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 16)),
